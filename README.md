@@ -12,7 +12,26 @@ Após instalar o aplicativo GIT (git-scm.com) em meu desktop windows, utilizei o
 mkdir testegit            # creando diretorio que será o repositorio local
 cd testegit               # tornando este dir. o diretorio corrente
 touch a.txt               # criando um arquivo para verificar sincronização remota
-        
+
+git config --global user.name "Nome Usuario"     # configura o nome do usuario para todos
+                                                 # projetos deste usuario devido ao flag
+                                                 # --global. Salva no windows
+                                                 # em %HOME%/.gitconfig
+git config --global user.email "user@host.com"   # configura o email da mesma forma.
+
+git config --global --list    # visualiza as config. globais do usuario. Valem para todos
+                              # projetos deste usuario.
+                              #
+git config --system --list    # visualiza as config. git do sistema. Valem para todos os
+                              # usuários deste sistema. Fica armazenado no arquivo 
+                              # "<drive>:\Program Files\Git\etc\gitconfig"
+git config --local --list     # visualiza as config. git do repositorio atual. E preciso
+                              # estar na pasta de um repo para funcionar. Le do arquivo
+                              # ./.git/config
+git config --list             # visualiza o conjunto de todas as config. para o repo.
+                                                            
+
+
 git init                  # cria o repositorio local. Irá criar um dir. oculto chamado .git
                           # que será usado para fazer o controle do git. (stage)
 git add .                 # preparou arquivos no stage para commit.
