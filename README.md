@@ -43,7 +43,7 @@ git init                  # cria o repositorio local. Irá criar um dir. oculto 
 git add .                 # preparou arquivos no stage para commit.
                           # para fazer unstage de um arquivo, use 'git reset HEAD nome_arq'
 git add *.html            # opção para adicionar ao index (stage) um tipo de arq. especifico
-                          
+
 
 git commit -m "primeiro commit"    # faz um commit das mudanças até aqui. Os commits
                                    # depois devem ser empurrados no repositório remoto
@@ -67,6 +67,22 @@ git remote -v            # verifica se ficou configurado corretamente
 git push origin master   # empurra os commits na branch master local para o repo remoto.
                          # observe que no site agora deve aparecer o arquivo a.txt 
 ```
+## Clonando um Repositório Existente
+
+Para criar uma cópia local de um repositório existente no github, devemos utilizar a ação clone do comando git.
+Esta ação irá fazer uma cópia completa do repositorio remoto, em um diretorio local com o mesmo nome. Dentro do diretório do repositório local, será criado um dir. .git que conterá toda a base do repo., ou seja, 
+pelo repo. local é possível visualizar todo o histórico dos arquivos e suas versões. Além disso, replica no diretorio criado, uma copia de trabalho da ultima versão de cada arquivo no repo. (equivalente ao checkout de outros CVS).
+Seguem os passos para clonar um repositório do github:
+```
+git clone https://github.com/poliedrum/testegit.git      # criará o diretorio testegit onde clonará o repo.
+
+
+git clone https://github.com/poliedrum/testegit.git OutroDir   # opcionalmente, pode ser informado
+                                                               # outro nome para o diretorio local.
+
+```
+
+O git aceita outros protocolos, além do https. Uma opção é o 'git://' ou o SSH 'user@server:path/to/repo.git'
 
 git clone https://github.com/user/repositorio.git Pasta
 Este comando clona um repositorio na maquina local, criando a Pasta e copiando para ela o conteúdo replicado. A
