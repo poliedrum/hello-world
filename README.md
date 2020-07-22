@@ -1,5 +1,6 @@
 # hello-world
-Repositorio para aprendizagem da ferramenta GIT
+
+Repositorio para aprendizagem da ferramenta GIT![Github](/img.jpg?raw=true "Git")
 
 Este é apenas um repositório de teste, cujo objetivo é permitir a aprendizagem das ferramentas gits, e servir como 
 material de apoio em futuros estudos.
