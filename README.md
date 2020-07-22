@@ -29,13 +29,21 @@ git config --local --list     # visualiza as config. git do repositorio atual. E
                               # estar na pasta de um repo para funcionar. Le do arquivo
                               # ./.git/config
 git config --list             # visualiza o conjunto de todas as config. para o repo.
-                                                            
 
+git config user.name          # visualiza o valor final (precedencia local > global > system)
+                              # de uma chave de config.
+
+git help <verb>               # obtem ajuda para uma determinada ação do git
+
+git status -vv                # lista as mudanças mostrando a diferença das versões
+git status -z -u              # lista mudanças de forma simplificada
 
 git init                  # cria o repositorio local. Irá criar um dir. oculto chamado .git
                           # que será usado para fazer o controle do git. (stage)
 git add .                 # preparou arquivos no stage para commit.
                           # para fazer unstage de um arquivo, use 'git reset HEAD nome_arq'
+git add *.html            # opção para adicionar ao index (stage) um tipo de arq. especifico
+                          
 
 git commit -m "primeiro commit"    # faz um commit das mudanças até aqui. Os commits
                                    # depois devem ser empurrados no repositório remoto
