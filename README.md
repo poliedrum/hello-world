@@ -1,6 +1,6 @@
 # hello-world
 
-Repositorio para aprendizagem da ferramenta GIT![Github](git.png?raw=true "Git")
+Repositorio para aprendizagem da ferramenta GIT com foco no Github.com ![Github](git.png?raw=true "Git")
 
 Este é apenas um repositório de teste, cujo objetivo é permitir a aprendizagem das ferramentas gits, e servir como 
 material de apoio em futuros estudos.
@@ -61,7 +61,8 @@ Ex: https://github.com/poliedrum/testegit.git
 Agora com a url copiada, continuamos os comandos:
 ```
 git remote add origin https://github.com/poliedrum/testegit.git   # adiciona referencia para o
-                                                                  # repo remoto
+                                                                  # repo remoto com apelido 
+                                                                  # origin
 
 git remote -v            # verifica se ficou configurado corretamente 
 
@@ -84,6 +85,8 @@ git clone https://github.com/poliedrum/testegit.git OutroDir   # opcionalmente, 
 ```
 
 O git aceita outros protocolos, além do https. Uma opção é o 'git://' ou o SSH 'user@server:path/to/repo.git'
+
+Quando é executado o comando clone, o repositório de origem já é configurado como repositório remoto com apelido origin.
 
 git clone https://github.com/user/repositorio.git Pasta
 Este comando clona um repositorio na maquina local, criando a Pasta e copiando para ela o conteúdo replicado. A
