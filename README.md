@@ -1,8 +1,9 @@
 # hello-world
 
-Repositorio para aprendizagem da ferramenta GIT com foco no Github.com ![Github](git.png?raw=true&s=10 "Git")
+Repositorio para aprendizagem da ferramenta GIT com foco no Github.com <img src="https://github.com/poliedrum/hello-world/blob/master/git.png?raw=true" width="32" height="32">
 
-<img src="https://github.com/poliedrum/hello-world/blob/master/git.png?raw=true" width="32" height="32">
+Imagem via MarkDown com endereço relativo:
+![Github](git.png?raw=true&s=10 "Git")
 
 Este é apenas um repositório de teste, cujo objetivo é permitir a aprendizagem das ferramentas gits, e servir como 
 material de apoio em futuros estudos.
