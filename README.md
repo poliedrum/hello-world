@@ -1,6 +1,6 @@
 # hello-world
 
-Repositorio para aprendizagem da ferramenta GIT com foco no Github.com ![Github](git.png?raw=true "Git")
+Repositorio para aprendizagem da ferramenta GIT com foco no Github.com ![Github](git.png?raw=true "Git"){:height="50%" width="50%"}
 
 Este é apenas um repositório de teste, cujo objetivo é permitir a aprendizagem das ferramentas gits, e servir como 
 material de apoio em futuros estudos.
@@ -79,8 +79,12 @@ Seguem os passos para clonar um repositório do github:
 git clone https://github.com/poliedrum/testegit.git      # criará o diretorio testegit onde clonará o repo.
 
 
-git clone https://github.com/poliedrum/testegit.git OutroDir   # opcionalmente, pode ser informado
-                                                               # outro nome para o diretorio local.
+git clone https://github.com/poliedrum/testegit.git OutroDir  # opcionalmente, pode ser informado
+                                                              # outro nome para o diretorio local. Assim,
+                                                              # este comando clona um repositorio na maquina 
+                                                              # local, criando a Pasta e copiando para ela o 
+                                                              # conteúdo replicado. A pasta é opcional, se não 
+                                                              # informada utiliza o nome do repositorio.
 
 ```
 
@@ -88,9 +92,8 @@ O git aceita outros protocolos, além do https. Uma opção é o 'git://' ou o S
 
 Quando é executado o comando clone, o repositório de origem já é configurado como repositório remoto com apelido origin.
 
-git clone https://github.com/user/repositorio.git Pasta
-Este comando clona um repositorio na maquina local, criando a Pasta e copiando para ela o conteúdo replicado. A
-pasta é opcional, se não informada utiliza o nome do repositorio.
+
+
 
 
 
