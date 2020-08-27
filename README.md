@@ -101,4 +101,26 @@ Quando é executado o comando clone, o repositório de origem já é configurado
 git log --oneline --decorate --graph --all   # visualizando as branchs
 ```
 
+## Removendo arquivo via gitignore
+
+Ao adicionar arquivos no .gitignore que já estão no repositório remoto, é preciso removê-los do cache para
+excluí-los.
+Siga os comandos abaixos para remover arquivos: (obs: eles permanecem no histórico dos commits)
+
+```
+# faça commit das alterações pendentes
+
+# então rode estes comandos
+# para remover tudo do stage (index) 
+git rm -r --cached .
+
+# adicione novamente
+git add .
+
+# faça commit
+git commit -m ".gitignore agora está funcionando"
+
+
+
+```
 
