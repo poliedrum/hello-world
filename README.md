@@ -95,8 +95,10 @@ O git aceita outros protocolos, além do https. Uma opção é o 'git://' ou o S
 
 Quando é executado o comando clone, o repositório de origem já é configurado como repositório remoto com apelido origin.
 
+## Criando Branch's e navegando entre elas
 
-
-
+```
+git log --oneline --decorate --graph --all   # visualizando as branchs
+```
 
 
